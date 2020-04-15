@@ -30,7 +30,7 @@ const SubdirsMenu = (props) => {
                     </p>
                     <ul className="menu-list">
                         {dirs.map(di =>
-                         <li ><a className={di===subdir?'is-active':''} onClick={()=>setSubdir(di)}>{di.substring(di.lastIndexOf('/')+1)}</a></li>
+                         <li ><a className={'menu-item' + di===subdir?'is-active':''} onClick={()=>setSubdir(di)}>{di.substring(di.lastIndexOf('/')+1)}</a></li>
                         )}
                     </ul>
                 </aside>
